@@ -5,7 +5,7 @@
     "singularName": "service",
     "pluralName": "services",
     "displayName": "Service",
-    "description": "MarqIT Services"
+    "description": "MarqIT Services - Homepage and Detailed Page"
   },
   "options": {
     "draftAndPublish": false
@@ -30,8 +30,17 @@
       "targetField": "title",
       "required": true
     },
-    "description": {
+    "shortDescription": {
       "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "detailedDescription": {
+      "type": "richtext",
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -43,6 +52,58 @@
       "type": "string"
     },
     "features": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subFeatures": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "whatsIncluded": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "statistics": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "badgeVariant": {
+      "type": "enumeration",
+      "enum": ["default", "primary", "success", "accent", "secondary"],
+      "default": "primary"
+    },
+    "badgeLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sectionId": {
+      "type": "string"
+    },
+    "showOnHomepage": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaButtons": {
       "type": "json",
       "pluginOptions": {
         "i18n": {
