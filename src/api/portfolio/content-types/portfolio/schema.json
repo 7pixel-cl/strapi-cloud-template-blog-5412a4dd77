@@ -5,7 +5,7 @@
     "singularName": "portfolio",
     "pluralName": "portfolios",
     "displayName": "Portfolio",
-    "description": "MarqIT Portfolio Projects"
+    "description": "MarqIT Portfolio Projects - Homepage and Portfolio Page"
   },
   "options": {
     "draftAndPublish": false
@@ -50,9 +50,25 @@
         }
       }
     },
+    "icon": {
+      "type": "string",
+      "default": "Monitor"
+    },
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "showOnHomepage": {
+      "type": "boolean",
+      "default": true
+    },
+    "statistics": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "order": {
       "type": "integer"
@@ -62,6 +78,15 @@
     },
     "githubUrl": {
       "type": "string"
+    },
+    "caseStudyUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     }
   }
 }
